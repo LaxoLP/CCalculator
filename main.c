@@ -1,6 +1,19 @@
 #include <stdio.h>
 
-int main()
+int main(){
+  int chooseCalculation;
+  
+  printf("What do you want to calculate (celsius/fahrenheit = 1)");
+  scanf("%i", &chooseCalculation);
+  
+  if(chooseCalculation == 1){
+    convertTemp();
+
+  }
+
+}
+
+int convertTemp(void)
 {
   char chooseConvertTemp;
   float celsius, fahrenheit;
